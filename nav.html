@@ -41,21 +41,56 @@
 
     </div>
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
-        <div class="modal-dialog">
-            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333" />
+    <div class="modal" id="reqModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.5425 8.45751C24.0632 8.97821 24.0632 9.82243 23.5425 10.3431L17.8856 16L23.5425 21.6568C24.0632 22.1775 24.0632 23.0218 23.5425 23.5425C23.0218 24.0632 22.1775 24.0632 21.6568 23.5425L16 17.8856L10.3431 23.5425C9.82245 24.0632 8.97823 24.0632 8.45753 23.5425C7.93683 23.0218 7.93683 22.1775 8.45753 21.6568L14.1144 16L8.45752 10.3431C7.93683 9.82243 7.93683 8.97821 8.45752 8.45751C8.97822 7.93682 9.82244 7.93682 10.3431 8.45751L16 14.1144L21.6569 8.45751C22.1776 7.93681 23.0218 7.93681 23.5425 8.45751Z" fill="#005BAA" />
                 </svg>
             </button>
+            <div class="modal__top">
+                <div class="text45 bold-text">
+                    Заполните заявку
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <div class="modal-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="ФИО">
+                    </div>
+                    <div class="fg">
+                        <input class="international-phone" type="tel">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Почта">
+                    </div>
+                </div>
+                <div class="modal-form__conf">
+                    <div class="text16">
+                        Нажимая на кнопку, вы соглашаетесь с
+                        <a href="">Политикой конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="modal-form__nav">
+                    <button class="m-btn m-btn-blue">
+                        <span>Отправить заявку</span>
+                    </button>
+                </div>
+            </form>
 
-
-
+            <div class="modal__img">
+                <img class="_view1" src="img/modal-img.svg" alt="">
+                <img class="_view2" src="img/modal-img2.svg" alt="">
+            </div>
+            <div class="modal__logo">
+                <img src="img/logo2.svg" alt="">
+            </div>
         </div>
+
     </div>
 
 
-    <!-- <div class="modal-backdrop show"></div> -->
     <!--  -->
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>

@@ -55,16 +55,16 @@
                 </div>
                 <div class="text18">Мы позвоним и расскажем всё про обучение!</div>
             </div>
-            <form action="" class="modal-form">
+            <form action="/email.php" method="post" class="modal-form">
                 <div class="modal-form__fields">
                     <div class="fg">
-                        <input type="text" placeholder="ФИО">
+                        <input type="text" name="name" placeholder="ФИО">
                     </div>
                     <div class="fg">
-                        <input class="international-phone" type="tel">
+                        <input class="international-phone" type="tel" name="phone">
                     </div>
                     <div class="fg">
-                        <input type="email" placeholder="Почта">
+                        <input type="email" name="email" placeholder="Почта">
                     </div>
                 </div>
                 <div class="modal-form__conf">
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="modal-form__nav">
-                    <button class="m-btn m-btn-blue">
+                    <button type="submit" class="m-btn m-btn-blue">
                         <span>Отправить заявку</span>
                     </button>
                 </div>
